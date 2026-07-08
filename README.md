@@ -2,13 +2,13 @@
 
 **Resource Innovations · Program Administration Tool**
 
-An engineering-based savings estimator for heat pump electrification rebate planning. Produces bin-method heating savings estimates alongside RTF deemed savings for comparison, helping program administrators understand the range of plausible savings for a given installation before pre/post metering data is available.
+An engineering-based savings estimator for heat pump electrification rebate planning. Produces bin-method heating savings estimates alongside RTF deemed savings for comparison, helping program administrators understand the range of plausible savings.
 
 ---
 
 ## Purpose and Intended Use
 
-This tool is designed for **program administrators**, not contractors or customers. It is a planning instrument, not a final determination of rebate eligibility or savings verification.
+It is a planning instrument, not a final determination of rebate eligibility or savings verification.
 
 It answers two questions for a given installation scenario:
 
@@ -28,14 +28,11 @@ index.html   ← open this in a browser
 engine.js    ← calculation engine (loaded by index.html)
 app.js       ← form logic and results rendering (loaded by index.html)
 ```
-
-No server, build step, or internet connection is required after the initial page load (fonts load from Google Fonts on first open; the tool functions without them). To deploy to GitHub Pages or an internal server, upload all three files to the same directory.
-
 ---
 
-## Step-by-Step Usage
+##  Usage
 
-### Step 1 — Home & Location
+### Home & Location
 
 **Location**
 Select the closest of the five available stations. Each station maps to an RTF Heating Zone (HZ1 or HZ2) which determines which RTF comparison figures are used.
@@ -64,7 +61,7 @@ Affects the cooling calculation:
 
 ---
 
-### Step 2 — New Equipment
+### New Equipment
 
 **System type**
 - *Ductless* — shows the number of indoor heads field. More heads = higher Heating Load Served factor (the fraction of the home's load the HP actually displaces).
@@ -95,7 +92,7 @@ Also on the AHRI certificate. Used for the cooling savings estimate.
 
 ---
 
-### Step 3 — Load Calculation (optional but recommended)
+### Load Calculation (optional but recommended)
 
 If the contractor performed a Manual J or equivalent load calculation, enter the design heating load in BTU/h here. When provided:
 
@@ -107,7 +104,7 @@ When no load calculation is entered, the tool uses square footage and year built
 
 ---
 
-### Step 4 — Adjustment Factors
+### Adjustment Factors
 
 **Field performance derate (%)**
 The ratio of real-world installed performance to AHRI lab-rated performance. Default is 88% (a 12% derate), reflecting the general finding in heat pump evaluation literature that installed equipment typically achieves 80–90% of its nameplate efficiency due to installation quality variation, real defrost cycling, and non-ideal airflow. Applied symmetrically to both baseline and new heat pump equipment.
@@ -116,7 +113,7 @@ This default can be adjusted as your program accumulates metered pre/post data �
 
 ---
 
-### Step 5 — Calculate and Read Results
+### Calculate and Read Results
 
 Click **Calculate Savings** to run the analysis.
 
